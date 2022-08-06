@@ -7,7 +7,7 @@
     "prepare": "husky install",
     "commit": "git-cz",
     "lint": "tsc --noEmit && eslint src/ --fix",
-    "dev": "tsnd src/index.ts --ignore-watch node_modules --respawn --transpile-only",
+    "dev": "tsnd --inspect --respawn --transpile-only src/index.ts",
     "build": "tsc -p",
     "start": "node build/index.js"
   },
